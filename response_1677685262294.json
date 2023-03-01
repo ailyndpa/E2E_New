@@ -1,0 +1,374 @@
+{
+  "data": {
+    "id": 45113,
+    "tamsId": 422485,
+    "airline": "GOL LINEAS AEREAS",
+    "iataCode": "G3",
+    "flightNumber": "7631",
+    "stda": 1677688500,
+    "stdaJul": 60,
+    "atda": 0,
+    "etda": 0,
+    "passengerCount": 0,
+    "englishState": "Gate Changed",
+    "spanishState": "Cambio Puerta",
+    "portugueseState": "",
+    "iataDestinationOrigin": "GRU",
+    "moveType": "D",
+    "destinationOrigin": "San Pablo",
+    "public": true,
+    "aircraftType": null,
+    "aircraftIdentification": "PSGPB",
+    "arpt": "MVD",
+    "type1": "1",
+    "type2": "P",
+    "type3": "I",
+    "terminalId": 1,
+    "flightSharesList": [],
+    "beltsList": [],
+    "gatesList": [
+      {
+        "id": 2350292,
+        "dataGate": "6",
+        "from": 1677684900,
+        "to": 1677688800,
+        "flightId": 45113
+      }
+    ],
+    "lostAndFoundsList": [],
+    "checkInDesksList": [
+      {
+        "id": 17952993,
+        "desk": "23",
+        "from": 1677675600,
+        "to": 1677688500,
+        "template": "PREMIUM",
+        "flightId": 45113
+      },
+      {
+        "id": 17952994,
+        "desk": "24",
+        "from": 1677675600,
+        "to": 1677688500,
+        "template": "Todos los vuelos y destinos",
+        "flightId": 45113
+      },
+      {
+        "id": 17952995,
+        "desk": "25",
+        "from": 1677675600,
+        "to": 1677688500,
+        "template": "Todos los vuelos y destinos",
+        "flightId": 45113
+      },
+      {
+        "id": 17952996,
+        "desk": "26",
+        "from": 1677675600,
+        "to": 1677688500,
+        "template": "Todos los vuelos y destinos",
+        "flightId": 45113
+      },
+      {
+        "id": 17952997,
+        "desk": "27",
+        "from": 1677675600,
+        "to": 1677688500,
+        "template": "PRIORIDAD",
+        "flightId": 45113
+      },
+      {
+        "id": 17952998,
+        "desk": "28",
+        "from": 1677675600,
+        "to": 1677688500,
+        "template": "DROP OFF",
+        "flightId": 45113
+      }
+    ],
+    "enableFlightRunwayLocationsList": [
+      {
+        "runwayLocationId": 1,
+        "runwayLocation": {
+          "id": 1,
+          "name": "Runway_POC",
+          "type": "POC",
+          "arrivalsDeparture": "D",
+          "terminalId": 1,
+          "terminal": {
+            "id": 1,
+            "name": "Terminal_1",
+            "airportId": 1,
+            "airport": {
+              "id": 1,
+              "name": "Montevideo",
+              "nameISO": "MVD"
+            }
+          },
+          "runwayLocationDocumentsList": [
+            {
+              "runwayLocationId": 1,
+              "documentId": 1,
+              "document": {
+                "id": 1,
+                "type": "I",
+                "descriptionType": "CEDULA DE IDENTIDAD",
+                "countryId": 1,
+                "country": {
+                  "id": 1,
+                  "name": "URUGUAY",
+                  "nameISO": "URY"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 1,
+              "documentId": 2,
+              "document": {
+                "id": 2,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 1,
+                "country": {
+                  "id": 1,
+                  "name": "URUGUAY",
+                  "nameISO": "URY"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 1,
+              "documentId": 3,
+              "document": {
+                "id": 3,
+                "type": "CI",
+                "descriptionType": "CEDULA DE IDENTIDAD",
+                "countryId": 2,
+                "country": {
+                  "id": 2,
+                  "name": "ARGENTINA",
+                  "nameISO": "ARG"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 1,
+              "documentId": 4,
+              "document": {
+                "id": 4,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 2,
+                "country": {
+                  "id": 2,
+                  "name": "ARGENTINA",
+                  "nameISO": "ARG"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 1,
+              "documentId": 5,
+              "document": {
+                "id": 5,
+                "type": "CI",
+                "descriptionType": "CEDULA DE IDENTIDAD",
+                "countryId": 3,
+                "country": {
+                  "id": 3,
+                  "name": "BRASIL",
+                  "nameISO": "BRA"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 1,
+              "documentId": 6,
+              "document": {
+                "id": 6,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 3,
+                "country": {
+                  "id": 3,
+                  "name": "BRASIL",
+                  "nameISO": "BRA"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 1,
+              "documentId": 7,
+              "document": {
+                "id": 7,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 4,
+                "country": {
+                  "id": 4,
+                  "name": "ESPANA",
+                  "nameISO": "ESP"
+                }
+              }
+            }
+          ]
+        },
+        "flightId": 45113,
+        "enable": true,
+        "automaticEnable": true,
+        "acceptDuplicityPoc": false
+      },
+      {
+        "runwayLocationId": 2,
+        "runwayLocation": {
+          "id": 2,
+          "name": "Runway_ABC_Departure",
+          "type": "ABC",
+          "arrivalsDeparture": "D",
+          "terminalId": 1,
+          "terminal": {
+            "id": 1,
+            "name": "Terminal_1",
+            "airportId": 1,
+            "airport": {
+              "id": 1,
+              "name": "Montevideo",
+              "nameISO": "MVD"
+            }
+          },
+          "runwayLocationDocumentsList": [
+            {
+              "runwayLocationId": 2,
+              "documentId": 1,
+              "document": {
+                "id": 1,
+                "type": "I",
+                "descriptionType": "CEDULA DE IDENTIDAD",
+                "countryId": 1,
+                "country": {
+                  "id": 1,
+                  "name": "URUGUAY",
+                  "nameISO": "URY"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 2,
+              "documentId": 2,
+              "document": {
+                "id": 2,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 1,
+                "country": {
+                  "id": 1,
+                  "name": "URUGUAY",
+                  "nameISO": "URY"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 2,
+              "documentId": 3,
+              "document": {
+                "id": 3,
+                "type": "CI",
+                "descriptionType": "CEDULA DE IDENTIDAD",
+                "countryId": 2,
+                "country": {
+                  "id": 2,
+                  "name": "ARGENTINA",
+                  "nameISO": "ARG"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 2,
+              "documentId": 4,
+              "document": {
+                "id": 4,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 2,
+                "country": {
+                  "id": 2,
+                  "name": "ARGENTINA",
+                  "nameISO": "ARG"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 2,
+              "documentId": 5,
+              "document": {
+                "id": 5,
+                "type": "CI",
+                "descriptionType": "CEDULA DE IDENTIDAD",
+                "countryId": 3,
+                "country": {
+                  "id": 3,
+                  "name": "BRASIL",
+                  "nameISO": "BRA"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 2,
+              "documentId": 6,
+              "document": {
+                "id": 6,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 3,
+                "country": {
+                  "id": 3,
+                  "name": "BRASIL",
+                  "nameISO": "BRA"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 2,
+              "documentId": 7,
+              "document": {
+                "id": 7,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 4,
+                "country": {
+                  "id": 4,
+                  "name": "ESPANA",
+                  "nameISO": "ESP"
+                }
+              }
+            },
+            {
+              "runwayLocationId": 2,
+              "documentId": 8,
+              "document": {
+                "id": 8,
+                "type": "P",
+                "descriptionType": "PASAPORTE",
+                "countryId": 6,
+                "country": {
+                  "id": 6,
+                  "name": "ITALIA",
+                  "nameISO": "ITA"
+                }
+              }
+            }
+          ]
+        },
+        "flightId": 45113,
+        "enable": true,
+        "automaticEnable": true,
+        "acceptDuplicityPoc": false
+      }
+    ],
+    "logo": "data:image/png;base64,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",
+    "posicion": "33M"
+  },
+  "guid": "8d556fa7-5989-44f5-bfd5-b620064bacb5",
+  "code": 0,
+  "message": "Transacción ejecutada con éxito"
+}
