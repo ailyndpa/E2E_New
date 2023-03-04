@@ -1,0 +1,1188 @@
+{
+	"id": "9b72c119-d3a3-4ec7-9e41-6dd0582b8200",
+	"name": "E2E_New",
+	"timestamp": "2023-03-03T22:07:05.274Z",
+	"collection_id": "0-12370ec6-aa62-4539-8d3a-bef6a0a77f10",
+	"folder_id": 0,
+	"environment_id": "45fc1e50-d915-4b6a-b75c-88edba5755be",
+	"totalPass": 71,
+	"totalFail": 13,
+	"results": [
+		{
+			"id": "266fcc3f-26ac-4c7a-9473-28070b50e94e",
+			"name": "GetAboutInfo",
+			"url": "https://easypoc.stg.aic.carrasco.aero/api/About/GetAboutInfo",
+			"time": 94,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"System version": true,
+				"System name": true,
+				"Verifying the existence of properties in domainController": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"System version": {
+					"pass": 1,
+					"fail": 0
+				},
+				"System name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verifying the existence of properties in domainController": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"System version": true,
+					"System name": true,
+					"Verifying the existence of properties in domainController": true
+				}
+			]
+		},
+		{
+			"id": "b1bd014a-346c-433d-b38d-39faf973570f",
+			"name": "GetFlightsPocEnabled",
+			"url": "https://easycore.stg.aic.carrasco.aero/api/Flight/GetFlightsPocEnabled?userName=QA&terminalId=1",
+			"time": 1220,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1220
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2977f214-3246-47a7-8e83-7c8e9f124fec",
+			"name": "CreatePassengerBcbp",
+			"url": "https://easypoc.stg.aic.carrasco.aero/api/Bcbp/CreatePassengerBcbp?userName=QA&name=p&lastName=Mismo%20asiento&progTime=03/03/2023%2019:23:00&destination=SCL&flightCode=%20LA407%20%20&seatCode=903A&origin=MVD&passengerType=Pasajero_Mayor&stdaJulOptionalParam=62",
+			"time": 847,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": false,
+				"Checking guid": true,
+				"Checking data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Checking guid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				847
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": false,
+					"Checking guid": true,
+					"Checking data": true
+				}
+			]
+		},
+		{
+			"id": "dbab398e-6245-4b96-835d-bf2010199936",
+			"name": "CreateBatchBcbp",
+			"url": "https://easypoc.stg.aic.carrasco.aero/api/Bcbp/CreateBatchBcbp?username=QA&progTime=03/03/2023%2019:23:00&flightCode=%20LA407%20%20&destination=SCL&origin=MVD&seatLetter=A&countToGenerate=2&passengerType=Pasajero_Mayor&stdaJulOptionalParam=62",
+			"time": 91,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": false,
+				"Checking guid": true,
+				"Verify that the specified amount of bcbp is generated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Checking guid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the specified amount of bcbp is generated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				91
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": false,
+					"Checking guid": true,
+					"Verify that the specified amount of bcbp is generated": true
+				}
+			]
+		},
+		{
+			"id": "8efd2d92-0abc-4487-98c5-e822dce1dcbd",
+			"name": "Check/ValidationBcbp",
+			"url": "https://easypoc.stg.aic.carrasco.aero/api/Check/ValidationBcbp?idRunway=POC_1&bcbp=M1MISMO%20ASIENT/P%20%20%20%20%20%20%20%20%20%20%20%20%20%20MVDSCLLA%20407%20%2062%20%20903A%20%20%20%20%20%20%20%20&onlyBcbpCheck=false&manual=true",
+			"time": 2254,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2254
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": false
+				}
+			]
+		},
+		{
+			"id": "1ed95d50-9c86-4089-8ff6-73e8f01d02af",
+			"name": "Check/CheckIn",
+			"url": "https://easypoc.stg.aic.carrasco.aero/api/Check/CheckIn?VBTransactionId=POC_1677881228127&runwayId=POC_1&bcbp=M1MISMO%20ASIENT/P%20%20%20%20%20%20%20%20%20%20%20%20%20%20MVDSCLLA%20407%20%2062%20%20903A%20%20%20%20%20%20%20%20&passengerType=Pasajero_Mayor",
+			"time": 1486,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true,
+				"Code is 0": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Code is 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1486
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true,
+					"Code is 0": true
+				}
+			]
+		},
+		{
+			"id": "de08faba-5dbf-4721-8a84-8638165679c1",
+			"name": "ConfirmEntry",
+			"url": "https://easypoc.stg.aic.carrasco.aero/api/ConfirmEntry/ConfirmEntry?VBTransactionId=POC_1677881228127&idTransactionEP=7252&confirmTrx=1&runwayId=POC_1&wu=1",
+			"time": 246,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"ConfirmEntry Code": true,
+				"ConfirmEntry message": false,
+				"Code is 0": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ConfirmEntry Code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ConfirmEntry message": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Code is 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				246
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"ConfirmEntry Code": true,
+					"ConfirmEntry message": false,
+					"Code is 0": true
+				}
+			]
+		},
+		{
+			"id": "2405270c-d637-41f2-8676-ccfad23450c6",
+			"name": "CheckDocument",
+			"url": "https://easydnm.stg.aic.carrasco.aero/api/DNM/CheckDocument?clientTrxId=1&runwayId=WSGATE03",
+			"time": 1662,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1662
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "22d288aa-d5b5-4f9c-845a-44720cd847a6",
+			"name": "GetBlacklistHits",
+			"url": "https://easydnm.stg.aic.carrasco.aero/api/DNM/GetBlacklistHits?clientTrxId=1&runwayId=WSGATE03",
+			"time": 5712,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5712
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "4d964b98-e513-4e16-acf8-89a3cb0c27e2",
+			"name": "IgnoreHit",
+			"url": "https://easydnm.stg.aic.carrasco.aero/api/DNM/IgnoreHit?easyDNMTrxId=928&clientTrxId=1&runwayId=WSGATE03&dnmUserName=QA",
+			"time": 201,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				201
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "495f37e8-5d75-4202-b620-3bb911449e64",
+			"name": "SetDNM",
+			"url": "https://easydnm.stg.aic.carrasco.aero/api/DNM/SetDNM?easyDNMTrxId=928&clientTrxId=1&runwayId=WSGATE03&dnmUserName=QA",
+			"time": 1613,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1613
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "e0c60ca8-318d-4fb2-9130-13ebcc635b07",
+			"name": "ProcessPocEmbarkPassenger",
+			"url": "https://torino.stg.aic.carrasco.aero/api/MatchAndSimilarNames/ProcessPocEmbarkPassenger?userName=QA",
+			"time": 246,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true,
+				"validate that the response message is the one I am expecting in the js for the current iteration": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate that the response message is the one I am expecting in the js for the current iteration": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				246
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true,
+					"validate that the response message is the one I am expecting in the js for the current iteration": false
+				}
+			]
+		},
+		{
+			"id": "944e4483-9c08-4a70-a708-2fb3395c16e4",
+			"name": "ProcessDocumentEmbarkPassenger",
+			"url": "https://torino.stg.aic.carrasco.aero/api/MatchAndSimilarNames/ProcessDocumentEmbarkPassenger?userName=QA",
+			"time": 1084,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true,
+				"Checks if what is sent in the body of the request is what is returned as a response": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checks if what is sent in the body of the request is what is returned as a response": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1084
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true,
+					"Checks if what is sent in the body of the request is what is returned as a response": false
+				}
+			]
+		},
+		{
+			"id": "4d0e4b33-b1ba-4b6b-9bfb-80f1e8be9bd3",
+			"name": "ProcessSyncEmbarkPassenger",
+			"url": "https://torino.stg.aic.carrasco.aero/api/MatchAndSimilarNames/ProcessSyncEmbarkPassenger?userName=QA",
+			"time": 2915,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2915
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "3c73911f-ef86-4c72-9386-e4cdc66b2408",
+			"name": "MatchDocumentBcbp",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/MatchDocumentBcbp?username=QA",
+			"time": 313,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true,
+				"check the status ReadyToAdd": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check the status ReadyToAdd": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true,
+					"check the status ReadyToAdd": true
+				}
+			]
+		},
+		{
+			"id": "61dc20c9-a573-4953-aace-ce87001079fd",
+			"name": "AddTrackingToGallery",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/AddTrackingToGallery?username=QA",
+			"time": 174,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": false,
+				"Checking response message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Checking response message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				}
+			]
+		},
+		{
+			"id": "0ef8b72a-0b83-4733-8b96-c3aede729a00",
+			"name": "ProcessMatch",
+			"url": "https://torino.stg.aic.carrasco.aero/api/MatchAndSimilarNames/ProcessMatch?userName=QA",
+			"time": 1453,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1453
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "173d418c-a34b-479e-bf41-f85d8a9b23d9",
+			"name": "ProcessSimilar",
+			"url": "https://torino.stg.aic.carrasco.aero/api/MatchAndSimilarNames/ProcessSimilar?userName=QA",
+			"time": 1183,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1183
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "d2602018-0ee4-4260-8239-2fc6196e3f9f",
+			"name": "GetByDNMDocument",
+			"url": "https://torino.stg.aic.carrasco.aero/api/MatchAndSimilarNames/GetByDNMDocument?userName=QA",
+			"time": 518,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": false,
+				"Checking response message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Checking response message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				518
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				}
+			]
+		},
+		{
+			"id": "cbebe14a-c9b6-47ec-8359-8daa219915e3",
+			"name": "GetAllTracking",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/GetAllTracking?username=QA&airlines=All",
+			"time": 586,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				586
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "4737c3bd-f1fa-4a49-874a-219b4dc2c7b4",
+			"name": "OnlyIDs",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Passenger/OnlyIDs?updatedSince=0",
+			"time": 136,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				136
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cc70b3ba-f23b-4357-a84c-919a1f72b4b7",
+			"name": "Passenger",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Passenger",
+			"time": 422,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				422
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "67766dfb-bf5b-4bd5-a982-8a4b5660ecdd",
+			"name": "GetModifiedTracking",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/GetModifiedTracking?username=QA&airlines=All&dateTimeLastConsulting=",
+			"time": 181,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true,
+				"check the status Added": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check the status Added": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true,
+					"check the status Added": false
+				}
+			]
+		},
+		{
+			"id": "a219d8fd-3bc5-40c4-9add-1f712ff722cb",
+			"name": "GetSimilarNamesAsync",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/GetSimilarNamesAsync?username=QA&airlines=All",
+			"time": 276,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				276
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "700ffc72-e5eb-4fa1-bde0-6be798f4961d",
+			"name": "RemoveTrackingFromGallery",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/RemoveTrackingFromGallery?username=QA",
+			"time": 270,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true,
+				"check the status ReadyToRemove": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check the status ReadyToRemove": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				270
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true,
+					"check the status ReadyToRemove": true
+				}
+			]
+		},
+		{
+			"id": "78763f9e-dc75-4f96-92b2-435b1cc16249",
+			"name": "UnmatchDocumentBcbp",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/UnmatchDocumentBcbp?username=QA",
+			"time": 283,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				283
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "3b54cd87-a4f1-4057-b965-3409bd034660",
+			"name": "GetNumberPassProcess",
+			"url": "https://torino.stg.aic.carrasco.aero/api/Tracking/GetNumberPassProcess?username=QA",
+			"time": 472,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": false,
+				"Checking response message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Checking response message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				472
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 25938,
+	"collection": {
+		"requests": [
+			{
+				"id": "266fcc3f-26ac-4c7a-9473-28070b50e94e",
+				"method": "GET"
+			},
+			{
+				"id": "b1bd014a-346c-433d-b38d-39faf973570f",
+				"method": "GET"
+			},
+			{
+				"id": "2977f214-3246-47a7-8e83-7c8e9f124fec",
+				"method": "GET"
+			},
+			{
+				"id": "dbab398e-6245-4b96-835d-bf2010199936",
+				"method": "GET"
+			},
+			{
+				"id": "8efd2d92-0abc-4487-98c5-e822dce1dcbd",
+				"method": "POST"
+			},
+			{
+				"id": "1ed95d50-9c86-4089-8ff6-73e8f01d02af",
+				"method": "POST"
+			},
+			{
+				"id": "de08faba-5dbf-4721-8a84-8638165679c1",
+				"method": "POST"
+			},
+			{
+				"id": "2405270c-d637-41f2-8676-ccfad23450c6",
+				"method": "POST"
+			},
+			{
+				"id": "22d288aa-d5b5-4f9c-845a-44720cd847a6",
+				"method": "POST"
+			},
+			{
+				"id": "4d964b98-e513-4e16-acf8-89a3cb0c27e2",
+				"method": "POST"
+			},
+			{
+				"id": "495f37e8-5d75-4202-b620-3bb911449e64",
+				"method": "POST"
+			},
+			{
+				"id": "e0c60ca8-318d-4fb2-9130-13ebcc635b07",
+				"method": "POST"
+			},
+			{
+				"id": "944e4483-9c08-4a70-a708-2fb3395c16e4",
+				"method": "POST"
+			},
+			{
+				"id": "4d0e4b33-b1ba-4b6b-9bfb-80f1e8be9bd3",
+				"method": "GET"
+			},
+			{
+				"id": "3c73911f-ef86-4c72-9386-e4cdc66b2408",
+				"method": "POST"
+			},
+			{
+				"id": "61dc20c9-a573-4953-aace-ce87001079fd",
+				"method": "PUT"
+			},
+			{
+				"id": "0ef8b72a-0b83-4733-8b96-c3aede729a00",
+				"method": "GET"
+			},
+			{
+				"id": "173d418c-a34b-479e-bf41-f85d8a9b23d9",
+				"method": "GET"
+			},
+			{
+				"id": "d2602018-0ee4-4260-8239-2fc6196e3f9f",
+				"method": "POST"
+			},
+			{
+				"id": "cbebe14a-c9b6-47ec-8359-8daa219915e3",
+				"method": "GET"
+			},
+			{
+				"id": "4737c3bd-f1fa-4a49-874a-219b4dc2c7b4",
+				"method": "GET"
+			},
+			{
+				"id": "cc70b3ba-f23b-4357-a84c-919a1f72b4b7",
+				"method": "POST"
+			},
+			{
+				"id": "67766dfb-bf5b-4bd5-a982-8a4b5660ecdd",
+				"method": "GET"
+			},
+			{
+				"id": "a219d8fd-3bc5-40c4-9add-1f712ff722cb",
+				"method": "GET"
+			},
+			{
+				"id": "700ffc72-e5eb-4fa1-bde0-6be798f4961d",
+				"method": "PUT"
+			},
+			{
+				"id": "78763f9e-dc75-4f96-92b2-435b1cc16249",
+				"method": "PUT"
+			},
+			{
+				"id": "3b54cd87-a4f1-4057-b965-3409bd034660",
+				"method": "GET"
+			}
+		]
+	}
+}
