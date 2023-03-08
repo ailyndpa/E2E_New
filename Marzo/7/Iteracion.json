@@ -1,13 +1,5 @@
 [   
-      {
-       "_services": "GetAboutInfo/GetBlockedSeatByData",
-       "_comment": "Validando respuesta adecuada en los servicios GetBlockedSeatByData para seatCode nulo",
-       "index": 73,
-       "seatComment": "seatCode nulo",
-       "seatCode": null,
-       "messageGetBlockedSeat": "Código de asiento nulo o vacío",
-       "codeGetBlockedSeat": "606"
-     },
+      
      {
        "_services": "GetAboutInfo/GetBlockedSeatByData",
        "_comment": "Validando respuesta adecuada en los servicios BlockSeat para seatCode y seatLetter vacío",
