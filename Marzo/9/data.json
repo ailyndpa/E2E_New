@@ -1,0 +1,25 @@
+[
+	{
+       "_services": "GetAboutInfo/GetFlightsPocEnabled/ValidationBcbp/CheckIn/CheckOut/ProcessPocEmbarkPassenger",
+       "_comment": "Validando respuesta adecuada para bcbp numérico",
+       "index": 46,
+       "userName": "QA",
+       "terminalId": "1",
+       "passengerType": "Pasajero_Mayor",
+       "number": "124",
+       "runwayId": "POC_4",
+       "onlyBcbpCheck": false,
+       "manual": false,
+       "disembark": true,
+       "validBcbp": true,
+       "bcbp": "12345",
+       "messageValidationBCBP": "El BCBP es inválido",
+       "codeValidationBCBP":"26",
+       "messageCheckin": "El BCBP es inválido",
+       "codeCheckin": "26",
+       "codeCheckOut": "26",
+       "messageCheckOut": "El BCBP es inválido",
+       "messagePocEmbark": "Campo code2D inválido",
+       "codePocEmbark": "26"
+     }
+]
