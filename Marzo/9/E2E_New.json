@@ -466,6 +466,7 @@
        "seatComment": "Comment 12",
        "number": "001",
        "destination": "",
+       "blockSeat": true,
        "messageBcbp":"Destino de vuelo nulo o vacío",
        "codeBcbp": "2023",
        "messageBatchBcbp": "Destino de vuelo nulo o vacío",
@@ -474,7 +475,7 @@
        "codeBlockSeat": "2023"
      },
      {
-       "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/CreateBatchBcbp/ValidationBcbp/CheckIn/ConfirmEntry",
+       "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/CreateBatchBcbp/ValidationBcbp/CheckIn/ConfirmEntry/ProcessPocEmbarkPassenger",
        "_comment": "Validando respuesta adecuada para pasajero mayor que no confirma checkin",
        "index": 13,
        "userName": "QA",
@@ -490,6 +491,9 @@
        "runwayId": "POC_1",
        "confirmTrx": "0",
        "wu": "1",
+       "validPocDateTime": true,
+       "pocDateTime": null,
+       "runwayId": "POC_1",
        "messageBcbp":"El BCBP del pasajero se creó con éxito",
        "codeBcbp": "0",
        "messageBatchBcbp": "El BCBP del pasajero se creó con éxito",
@@ -499,7 +503,9 @@
        "messageCheckin":"Pasajero Mayor Permitido Para Embarcar",
        "codeCheckin":"0",
        "messageConfirmEntry": "No se detectó al pasajero o el pasajero no ingresó",
-       "codeConfirmEntry": "2"
+       "codeConfirmEntry": "2",
+       "messagePocEmbark": "Campo pocDateTime requerido",
+       "codePocEmbark": "27"
      },
      {
        "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/CreateBatchBcbp",
@@ -925,7 +931,7 @@
        "codeBatchBcbp": "2028"
      },
      {
-       "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/CreateBatchBcbp/ValidationBcbp/CheckIn/ConfirmEntry",
+       "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/CreateBatchBcbp/ValidationBcbp/CheckIn/ConfirmEntry/ProcessPocEmbarkPassenger",
        "_comment": "Validando respuesta adecuada para countToGenerate decimal, passengerType ONU. Pasajero ONU no confirma checkin",
        "index": 29,
        "userName": "QA",
@@ -942,6 +948,8 @@
        "manual": true,
        "confirmTrx": "0",
        "wu": "1",
+       "validPocDateTime": true,
+       "pocDateTime": "",
        "messageBcbp":"El BCBP del pasajero se creó con éxito",
        "codeBcbp": "0",
        "messageBatchBcbp": "La cantidad a generar debe ser un número entero",
@@ -951,11 +959,13 @@
        "messageCheckin": "Militar de la ONU Permitido Para Embarcar",
        "codeCheckin": "0",
        "messageConfirmEntry": "No se detectó al pasajero o el pasajero no ingresó",
-       "codeConfirmEntry": "2"
+       "codeConfirmEntry": "2",
+       "messagePocEmbark": "Campo pocDateTime requerido",
+       "codePocEmbark": "27"
      }, 
      {
-       "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/InsertCrewPassenger/CreateBatchBcbp/ValidationBcbp/CheckIn/ConfirmEntry/GetFligthCrew/GetTransactionsByFlight/GetTransactionsByFlightWithoutPhotos/BlockSeat/GetIntelliPocResponses/GetBlockedSeatsByData/GetBlockedSeatByData",
-       "_comment": "Validando respuesta adecuada para countToGenerate formado por caracteres especiales, passengerType Tripulacion. tripulante no confirma checkin. Asiento 12W bloqueado",
+       "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/InsertCrewPassenger/CreateBatchBcbp/ValidationBcbp/CheckIn/ConfirmEntry/GetFligthCrew/GetTransactionsByFlight/GetTransactionsByFlightWithoutPhotos/BlockSeat/GetIntelliPocResponses/GetBlockedSeatsByData/GetBlockedSeatByData/ProcessPocEmbarkPassenger/ProcessDocumentEmbarkPassenger/ProcessSyncEmbarkPassenger/MatchDocumentBcbp/ProcessMatch",
+       "_comment": "Validando respuesta adecuada para countToGenerate formado por caracteres especiales, passengerType Tripulacion. tripulante no confirma checkin. Asiento 12W bloqueado. Validando respuestas adecuada para pocDateTime con otro formato para ProcessPocEmbarkPassenger. countryISO diferente a nationalityISO en ProcessDocumentEmbarkPassenger. validando respuesta adecuada para airportISOName y terminalNames(parámetros no requeridos) nulo en servicios ProcessSyncEmbarkPassenger y ProcessMatch",
        "index": 30,
        "userName": "QA",
        "terminalId": "1",
@@ -981,6 +991,21 @@
        "embarked": false,
        "getTransactions1": true,
        "getTransactions2": true,
+       "validPocDateTime": true,
+       "pocDateTime": "15/02/2023 15:00:00",
+       "moveId": "098769910000006980000000038265",
+       "docNumber": "1674436083500",
+       "gender": "F",
+       "countryISO": "BLR",
+       "nationality": "URY",
+       "countryName": "Uruguay",
+       "documentID": "K145467",
+       "personalID": "96698737211",
+       "moveId": "976989369852606980000000038265",
+       "validateAirportISOName": true,
+       "airportISOName": null,
+       "validateTerminalNames": true,
+       "terminalNames": null,
        "messageBcbp":"El BCBP del pasajero se creó con éxito",
        "codeBcbp": "0",
        "messageCrew": "Transacción ejecutada con éxito",
@@ -1004,7 +1029,17 @@
        "messageGetTransactions1": "Transacción ejecutada con éxito",
        "codeGetTransactions1": "0",
        "messageGetTransactions2": "Transacción ejecutada con éxito",
-       "codeGetTransactions2": "0"
+       "codeGetTransactions2": "0",
+       "messagePocEmbark": "Formato inválido para campo pocDateTime",
+       "codePocEmbark": "28",
+       "messageDocumentEmbark": "La Nacionalidad debe ser igual al País emisor del Documento",
+       "codeDocumentEmbark": "12",
+       "messageSyncEmbark": "Transacción ejecutada con éxito",
+       "codeSyncEmbark": "0",
+       "messageMatchDocumentBcbp": "",
+       "codeMatchDocumentBcbp": "",
+       "messageProcessMatch": "Transacción ejecutada con éxito",
+       "codeProcessMatch": "0"
      },
      {
        "_services": "GetAboutInfo/GetFlightsPocEnabled/CreatePassengerBcbp/CreateBatchBcbp/ValidationBcbp/CheckIn/ConfirmEntry/GetFligthCrew/GetTransactionsByFlight/GetTransactionsByFlightWithoutPhotos/BlockSeat/GetIntelliPocResponses/GetBlockedSeatsByData/GetBlockedSeatByData/UnblockSeat/CheckDocument/GetBlacklistHits/IgnoreHit/SetDNM/ProcessPocEmbarkPassenger/ProcessDocumentEmbarkPassenger/ProcessSyncEmbarkPassenger/MatchDocumentBcbp/AddTrackingToGallery/ProcessMatch/ProcessSimilar/GetByDNMDocument/GetAllTracking/OnlyIDs/Passenger/GetModifiedTracking/GetSimilarNamesAsync/RemoveTrackingFromGallery/UnmatchDocumentBcbp/GetNumberPassProcess",
